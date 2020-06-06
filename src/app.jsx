@@ -6,15 +6,15 @@ import SendEmail from "./node/send-email";
 
 function App() {
   return (
-    <div>
-      <HasTag tag="Email Confirmed" completed={4} />
-      <WaitFor days="2" completed={10} />
-      <HasTag tag="Completed signup" completed={4} />
+    <>
+      <HasTag tag="Email Confirmed" completed={45} />
+      <WaitFor days="2" completed={39} />
+      <HasTag tag="Completed signup" completed={34} />
       <SendEmail
         title="Tell us why you didn't finish signing up"
         completed={12}
       />
-    </div>
+    </>
   );
 }
 

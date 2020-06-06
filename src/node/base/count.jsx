@@ -9,13 +9,14 @@ const styles = {
   boxSizing: "border-box",
 };
 
-export default function Bottom({ completed }) {
+export default function Count({ completed }) {
   return (
     <div style={styles}>
       <div
         style={{
-          fontWeight: 300,
+          fontFamily: "Open Sans",
           fontSize: "0.9rem",
+          fontWeight: 200,
           textTransform: "uppercase",
         }}
       >
@@ -23,8 +24,9 @@ export default function Bottom({ completed }) {
       </div>
       <div
         style={{
-          fontWeight: 200,
+          fontFamily: "Inconsolata",
           fontSize: "0.8rem",
+          fontWeight: 400,
         }}
       >
         {completed} subscribers

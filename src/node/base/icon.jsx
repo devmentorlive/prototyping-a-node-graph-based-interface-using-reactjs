@@ -1,17 +1,18 @@
 import React from "react";
 
-const styles = {
-  position: "absolute",
-  top: "-31px",
-  left: `${(260 - 60) / 2}px`,
-  width: "60px",
-};
+export default function Icon({ type, nodeSize }) {
+  const iconSize = 54;
+  const styles = {
+    position: "absolute",
+    top: `-${iconSize / 2}px`,
+    left: `${(nodeSize - iconSize) / 2}px`,
+    width: `${iconSize}px`,
+  };
 
-export default function Icon({ type }) {
   return (
     <img
       style={styles}
-      src={`/images/icons/${type}.png`}
+      src={require(`./icons/${type}-icon.png`)}
       alt={`${type} node icon`}
     />
   );
